@@ -1,18 +1,25 @@
+## conda
 ### 查看版本
-conda --version
+```
+conda --version # 查看版本
+```
 ### 更新conda
+```
 conda update conda
+```
 ### 查看conda帮助信息
+```
 conda --help == conda -h
-
+```
 ### 创建环境
 ```
 conda create --name <env_name> <package_names>
 conda create -n python3 python=3.5 numpy pandas
 ```
 ### 切换环境
+```
 activate <env_name>
-
+```
 ### 退出环境
 deactivate
 
