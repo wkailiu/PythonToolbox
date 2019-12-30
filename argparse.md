@@ -14,5 +14,5 @@ print(args.opt_steps_pose)
 ```
 
 ### References
-> https://docs.python.org/zh-cn/3/library/argparse.html
-> from absl import flags 用途与此相同
+> * https://docs.python.org/zh-cn/3/library/argparse.html
+> * from absl import flags 用途与此相同
