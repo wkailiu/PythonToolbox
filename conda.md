@@ -1,53 +1,32 @@
 ## conda
-### 查看版本
+
+### 基本信息
 ```
 conda --version # 查看版本
+conda update conda # 更新conda
+conda -h # 查看conda帮助信息
 ```
-### 更新conda
+
+### 环境管理
 ```
-conda update conda
-```
-### 查看conda帮助信息
-```
-conda --help == conda -h
-```
-### 创建环境
-```
-conda create --name <env_name> <package_names>
+conda create -n <env_name> <package_names> # 创建环境
 conda create -n python3 python=3.5 numpy pandas
+activate <env_name> # 切换环境
+deactivate # 退出环境
+conda env list # 显示已经创建的环境
+conda create -n <new_env_name> --clone <copied_env_name> # 复制环境
+conda remove -n <env_name> --all # 删除环境
 ```
-### 切换环境
+
+### 包管理[在当前环境下]：
 ```
-activate <env_name>
-```
-### 退出环境
-deactivate
-
-### 显示已经创建的环境
-conda info --envs
-conda info -e
-conda env list
-
-### 复制环境
-conda create --name <new_env_name> --clone <copied_env_name>
-
-### 删除环境
-conda remove -n py36 --all
-
-
-### 获取当前环境中已安装的包信息
-conda list
-
-### 在当前环境中安装包
-conda install <package_name>
-
-* 当使用 conda install 无法进行安装时，可以使用pip进行安装
-pip install <package_name>
-
-### 卸载当前环境中的包
-conda remove <package_name>
-
-### 更新当前环境的包
-conda update <package_name>
+conda install <package_name> # 安装包
+pip install <package_name> # 当使用 conda install 无法进行安装时，可以使用pip进行安装
+conda list # 已安装的包信息
+conda remove <package_name> # 卸载当前环境中的包
+conda update <package_name> # 更新包
 conda upgrade <package_name>
-conda update --all
+conda update --all # 更新所有包
+```
+
+> https://zhuanlan.zhihu.com/p/32925500
