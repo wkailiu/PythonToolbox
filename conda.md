@@ -8,6 +8,7 @@ conda -h # 查看conda帮助信息
 ```
 
 ### 环境管理
+**注意：名称两边不加尖括号“<>”**
 ```
 conda create -n <env_name> <package_names> # 创建环境
 conda create -n python3 python=3.5 numpy pandas
@@ -28,5 +29,5 @@ conda update <package_name> # 更新包
 conda upgrade <package_name>
 conda update --all # 更新所有包
 ```
-
+### References
 > https://zhuanlan.zhihu.com/p/32925500
